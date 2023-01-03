@@ -1,0 +1,160 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,600&display=swap');
+/*Variables*/
+:root {
+    --font-family: 'Open Sans', sans-serif;
+    --font-size:16px;
+    --white: #fff;
+    --black: #000000;
+    --transition: 0.4 linear;
+    --secondary: rgb(187,152,102);
+    --primary:rgb(143,98,69);
+}
+/*Basic style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: var(--transition);
+    letter-spacing: 1px;
+}
+ul {
+    list-style: none;
+}
+img {
+    display: block;
+    width: 100%;
+}
+/*Nav*/
+nav {
+    padding: 20px 10px;
+}
+.logo {
+    float: left;
+    font-size: 30px;
+    color: var(--black);
+}
+.logo:hover {
+    color: var(--secondary);
+    border: 1px solid var(--black);
+}
+nav ul {
+    float: right;
+}
+nav ul li  {
+    display: inline-block;
+    
+}
+nav ul li a {
+    margin-left: 40px;
+    color: var(--black);
+    height: 60px;
+    line-height: 60px;
+    font-weight: 600;
+}
+nav ul li a:hover {
+    color: var(--secondary);
+  
+}
+.active {
+    color: var(--secondary);
+}
+.active:hover {
+    color: var(--primary);
+}
+
+/*Header*/
+header img {
+    height: 600px;
+}
+header {
+    text-align: center;
+    position: relative;
+}
+header h1 {
+    color: var(--black);
+    font-size: 4.5rem;
+    left: 1.5px;
+    position: absolute;
+    top: 50%;
+    left: 73%;
+    transform: translate(-50%,-73%);
+}
+header h5 {
+    font-size: 2.3rem;
+    left: 1.5px;
+    position: absolute;
+    top: 65%;
+    left: 77%;
+    transform: translate(-65%,-77%);
+}
+/*Ponuda*/
+.ponuda article {
+    float: left;
+    width: 33%;
+}
+.ponuda article::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.ponuda h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 100px 0;
+    color: var(--secondary);
+    text-shadow: 0 0 20px var(--secondary);
+    letter-spacing: 1.5px;
+}
+article h4 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+}
+article p {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+article img {
+    width: 250px;
+    margin: auto;
+    border: 2px solid var(--secondary);
+    padding: 4px;
+}
+/*Tim*/
+.tim article {
+    float: left;
+    width: 33%;
+}
+.tim article::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.tim h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--secondary);
+    text-shadow: 0 0 20px var(--secondary);
+    letter-spacing: 1.5px;
+}
+/*FOOTER*/
+
+footer p {
+    color: var(--secondary);    
+}
+footer i {
+    font-size: 1.9rem;
+    color: var(--primary);
+    margin-left: 350px;
+}
